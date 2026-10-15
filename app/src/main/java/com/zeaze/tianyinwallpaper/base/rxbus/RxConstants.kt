@@ -1,0 +1,27 @@
+package com.zeaze.tianyinwallpaper.base.rxbus
+
+object RxConstants {
+    const val RX_ADD_WALLPAPER = 0x00
+
+    const val RX_TRIGGER_ADD_WALLPAPER = 0x10
+    const val RX_TRIGGER_APPLY_WALLPAPER = 0x11
+    const val RX_TRIGGER_PREVIEW_WALLPAPER = 0x12
+    const val RX_TRIGGER_SAVE_GROUP = 0x13
+    const val RX_TRIGGER_ENTER_SELECT_MODE = 0x14
+    const val RX_TRIGGER_GROUP_OPTIONS = 0x15
+    const val RX_GROUPS_CHANGED = 0x16
+    const val RX_TRIGGER_OVERWRITE_WALLPAPER_LIST = 0x17
+    const val RX_SELECTION_MODE_CHANGED = 0x18
+    const val RX_SELECTION_CANCEL = 0x19
+    const val RX_SELECTION_DELETE = 0x1A
+    const val RX_SELECTION_TOGGLE_ALL = 0x1B
+
+    const val RX_TRIGGER_ADD_RASTER = 0x20
+    const val RX_TRIGGER_APPLY_RASTER = 0x21
+    const val RX_TRIGGER_PREVIEW_RASTER = 0x22
+    const val RX_TRIGGER_ENTER_RASTER_SELECT_MODE = 0x23
+    const val RX_RASTER_SELECTION_MODE_CHANGED = 0x24
+    const val RX_RASTER_SELECTION_CANCEL = 0x25
+    const val RX_RASTER_SELECTION_DELETE = 0x26
+    const val RX_RASTER_SELECTION_TOGGLE_ALL = 0x27
+}

@@ -1,0 +1,36 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.kotlin/
+
+# APK files
+*.apk
+*.aab
+# Fork modification (2026): keep local release signing keys out of the public source repository.
+*.jks
+*.keystore
+
+# Local investigation backups, not application source.
+_backup_2026-10-13/
+
+# Local-only artwork used by the hidden glass test screen; rights/source are unverified.
+/app/src/main/assets/test.png
+
+# Release output metadata
+output-metadata.json
+
+# Compiled class files
+*.class
