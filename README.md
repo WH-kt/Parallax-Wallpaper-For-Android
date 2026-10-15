@@ -2,7 +2,7 @@
 
 基于开源项目改进的 Android 光栅壁纸应用，支持图片图集和视频壁纸。图片编辑时保持原始比例并始终铺满画布，可拖动构图、调节缩放与旋转；预览、保存和实际壁纸共用同一套变换规则。
 
-> 当前版本：`4.0.1`（versionCode `48`）
+> 当前版本：`4.0.1`
 
 ## 功能
 
@@ -17,31 +17,6 @@
 | 图片构图编辑 | 图集图片卡片 |
 | --- | --- |
 | ![图片构图编辑界面](docs/screenshots/raster-editor-v4.png) | ![图集图片卡片](docs/screenshots/raster-thumbnail-glass.png) |
-
-## 构建
-
-### 环境要求
-
-- JDK 17 或更高版本
-- Android SDK（建议通过 Android Studio 安装）
-- 项目自带 Gradle Wrapper
-
-### 命令行
-
-```bash
-./gradlew assembleDebug
-./gradlew assembleRelease
-```
-
-APK 输出目录：`app/build/outputs/apk/`。
-
-不设置签名环境变量时，`assembleRelease` 生成未签名 APK。需要本地签名时，通过 `KEYSTORE_PATH`、`KEYSTORE_PASSWORD`、`KEY_ALIAS` 和 `KEY_PASSWORD` 环境变量提供私有签名配置；不要把密钥或密码提交到仓库。GitHub Actions 发布需要在仓库的 **Settings → Secrets and variables → Actions** 添加 `KEYSTORE_BASE64`、`KEYSTORE_PASSWORD`、`KEY_ALIAS` 和 `KEY_PASSWORD`。更新地址会从 GitHub Actions 的仓库环境自动读取。
-
-Windows 可使用 `gradlew.bat` 替代 `./gradlew`。
-
-### Android Studio
-
-使用 Android Studio 打开项目，等待 Gradle 同步完成后，从 Build 菜单构建 APK。
 
 ## 技术栈
 
